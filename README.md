@@ -23,9 +23,11 @@ Mengingat sifatnya yang sulit diprediksi dan tingginya angka kematian yang diseb
 #### Problem Statements
 - Faktor apa saja yang paling perlu diperhatikan dalam menjaga kesehatan diri terutam kesehatan jantung ?
 - Bagaimana performa model prediksi jika hanya menggunakan fitur non-medis dan pemeriksaann dasardibandingkan dengan model yang terdapat fitur medis??
+- Faktor non-medis apa yang paling mempengaruhi kondisi medis dan berperan signifikan dalam meningkatkan risiko penyakit jantung?
 
 #### Goals
 - Mencari tahu fitur dengan korelasi teringgi dengan serangan jantung
 - Mengolah dataset menjadi dua untuk dengan semua fitur, dan hanya fitur non-medis hingga pemeriksaan dasar dan dataset lainnya dengan fitur lengkap, membangun Model ML yang membandingkan model dengan kedua dataset tersebut
+- Menerapkan ML model yang berkaitan dengan Feature Importance Analysis
   
 #### Solution Statements
