@@ -21,13 +21,19 @@ Mengingat sifatnya yang sulit diprediksi dan tingginya angka kematian yang diseb
 ### Bussiness Understanding
 
 #### Problem Statements
-- Faktor apa saja yang paling perlu diperhatikan dalam menjaga kesehatan diri terutam kesehatan jantung ?
-- Bagaimana performa model prediksi jika hanya menggunakan fitur non-medis dan pemeriksaann dasardibandingkan dengan model yang terdapat fitur medis??
-- Faktor non-medis apa yang paling mempengaruhi kondisi medis dan berperan signifikan dalam meningkatkan risiko penyakit jantung?
+1. Faktor apa saja yang paling perlu diperhatikan dalam menjaga kesehatan diri terutama kesehatan jantung ?
+2. Bagaimana performa model prediksi jika hanya menggunakan fitur non-medis dan pemeriksaan dasar dibandingkan dengan model yang terdapat fitur medis??
+3. Faktor non-medis apa yang paling mempengaruhi kondisi medis dan berperan signifikan dalam meningkatkan risiko penyakit jantung?
 
 #### Goals
-- Mencari tahu fitur dengan korelasi teringgi dengan serangan jantung
-- Mengolah dataset menjadi dua untuk dengan semua fitur, dan hanya fitur non-medis hingga pemeriksaan dasar dan dataset lainnya dengan fitur lengkap, membangun Model ML yang membandingkan model dengan kedua dataset tersebut
-- Menerapkan ML model yang berkaitan dengan Feature Importance Analysis
+- Mengidentifikasi faktor utama yang berkontribusi terhadap penyakit jantung berdasarkan korelasi tertinggi dengan kondisi tersebut.
+- Membagi dataset ke dalam dua bagian:
+  1. Dataset dengan fitur lengkap (medis dan non-medis).
+  2. Dataset dengan fitur terbatas (hanya non-medis dan pemeriksaan dasar).
+Membangun model prediksi berbasis Machine Learning untuk kedua dataset dan membandingkan akurasi serta performa keduanya.
+- Mengidentifikasi faktor non-medis yang memiliki dampak signifikan terhadap kondisi medis yang berhubungan dengan penyakit jantung.
   
 #### Solution Statements
+1. Melakukan EDA secara mendetail dan menyeluruh terhadap fitur fitur yang ada beserta meninjau korelasi tiap fitur terhadap terjadinya penyakit jantung
+2. Membangun dan membandingkan 4 model machine learning, yaitu untuk dataset lengkap tanpa optimasi hyperparameter, untuk dataset non medis tanpa optimasi hyperparameter, dataset lengkap dengan optimasi hyperparameter, dataset dengan fitur non-medis dengan hyper-parameter. Model dibangun menggunakan algoritma klasifikasi SVM
+3. Melakukan pendekatan Machine Learning Feature Importance analysis dengan algoritma seperti Shap dan Random Forest untuk mendapatkan fitur non-medis yang paling mempengaruhi fitur-fitur medis
